@@ -14,6 +14,8 @@ You will be prompted to select a MIDI device on the CLI, when selected the devic
 
 Windows users can use [loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html) to create a virtual device if needed. Linux users can create a virtual port with ASLA.
 
+![2024-03-30 12_50_22-](https://github.com/PerryRylance/midi-to-device/assets/14136738/b9562340-e1c4-42c3-9e1e-7957926b5c1b)
+
 ## Notes
 Because `node-midi` has no concept of delta time in control messages, this project uses [@perry-rylance/midi-to-milliseconds](https://www.npmjs.com/package/@perry-rylance/midi-to-milliseconds) inside a tight loop to fetch events based on the system clock.
 
