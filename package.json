@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@perry-rylance/midi": "^1.0.6",
+    "@perry-rylance/midi": "^1.0.7",
     "@perry-rylance/midi-to-milliseconds": "^1.0.6",
     "midi": "^2.0.0",
     "prompt-sync": "^4.2.0",
@@ -10,6 +10,6 @@
     "typescript": "^5.4.3"
   },
   "scripts": {
-	"example": "npx tsx example.ts"
+    "example": "npx tsx example.ts"
   }
 }

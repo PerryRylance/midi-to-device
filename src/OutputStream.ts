@@ -12,6 +12,7 @@ export default class OutputStream extends WriteStream
 		super();
 	}
 
+	// TODO: Remove the new options thing and just serialize delta on the track only.
 	writeVLV(value: number) {} // NB: Don't write delta
 
 	send(event: Event)
