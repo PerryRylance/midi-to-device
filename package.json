@@ -11,6 +11,7 @@
     "typescript": "^5.4.3"
   },
   "scripts": {
-    "example": "npx tsx example.ts"
+    "example": "npx tsx example.ts",
+	"benchmark": "npx tsx benchmark.ts"
   }
 }

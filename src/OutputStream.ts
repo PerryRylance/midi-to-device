@@ -1,4 +1,4 @@
-import { Event, WriteStream } from "@perry-rylance/midi";
+import { ControlEvent, Event, WriteStream } from "@perry-rylance/midi";
 
 const midi = require('midi');
 
@@ -14,6 +14,9 @@ export default class OutputStream extends WriteStream
 
 	send(event: Event)
 	{
+		if(!(event instanceof ControlEvent))
+			return; // NB: We don't care about SysEx or meta events
+
 		this.seekTo(0);
 
 		event.writeBytes(this);

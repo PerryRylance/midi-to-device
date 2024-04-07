@@ -20,3 +20,5 @@ Windows users can use [loopMIDI](https://www.tobias-erichsen.de/software/loopmid
 Because `node-midi` has no concept of delta time in control messages, this project uses [@perry-rylance/midi-to-milliseconds](https://www.npmjs.com/package/@perry-rylance/midi-to-milliseconds) inside a tight loop to fetch events based on the system clock.
 
 This appears to work well, but I have not stress tested this. My intention is for this to serve as an example of how you would run a live "preview" of generated MIDI. For production audio projects in which timing is critical, I would recommend exporting your MIDI as a file on disc then importing that into your DAW.
+
+Update: `npm run benchmark` is included to benchmark your setup using Marc-André Hamelin's Circus Galop. This plays well on a Dell Precision 3551 using Vital synth and Reaper DAW's stock setup.
