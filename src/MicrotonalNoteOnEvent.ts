@@ -1,5 +1,4 @@
-import { Event, NoteOnEvent, PitchWheelEvent, WriteStream } from "@perry-rylance/midi";
-import { StatusBytes } from "@perry-rylance/midi/dist/streams/StatusBytes.js";
+import { Event, NoteOnEvent, PitchWheelEvent } from "@perry-rylance/midi";
 
 export default class MicrotonalNoteOnEvent extends Array<Event>
 {
